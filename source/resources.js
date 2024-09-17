@@ -2,10 +2,10 @@ class Resources {
     constructor(){
       
       this.toLoad = {
-        sky: "./source/sky (1).png",
-        ground: "./source/ground (1).png",
-        hero: "./source/hero-sheet (1).png",
-        shadow: "./source/shadow (1).png",
+        sky: "sky (1).png",
+        ground: "ground (1).png",
+        hero: "hero-sheet (1).png",
+        shadow: "shadow (1).png",
       };
       
       this.images = {};
@@ -15,11 +15,11 @@ class Resources {
           this.images[key] = {
             image: img,
             isLoaded: false
-          }
+          };
           img.onLoad = () => {
-            this.images[key].isLoaded = true
-          }
-        }) 
+            this.images[key].isLoaded = true;
+          };
+        });
     }
   }
 
