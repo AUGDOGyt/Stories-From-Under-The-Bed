@@ -8,7 +8,7 @@ class Resources {
         shadow: "shadow (1).png",
       };
       
-      this.images = {
+      this.images = {};
         Object.keys(this.toLoad).forEach(key => {
           const img = new Image();
           img.src = this.toLoad[key];
@@ -20,7 +20,6 @@ class Resources {
             this.images[key].isLoaded = true
           }
         }) 
-      };
     }
   }
 
