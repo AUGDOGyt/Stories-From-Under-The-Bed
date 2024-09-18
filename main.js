@@ -1,7 +1,7 @@
 import 'main.css';
 import { Resources } from "source/resources.js";
 
-const canvas = document/querySelector("game-canvas");
+const canvas = document.querySelector("game-canvas");
 const ctx = canvas.getContext("2d");
 
 const skySprite = new Sprite({
@@ -33,7 +33,7 @@ const draw = () => {
   skySprite.drawImage(ctx, 0, 0);
   groundSprite.drawImage(ctx, 0, 0);
   
-  const herOffset = new Vector2(-8, -21);
+  const heroOffset = new Vector2(-8, -21);
   const heroPosX = heroPos.x + heroOffset.x;
   const heroPosY = heroPos.y + heroOffset.y;
   
