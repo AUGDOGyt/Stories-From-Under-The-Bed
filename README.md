@@ -3,6 +3,8 @@ Stories From Under The Bed
 
 A story driven game, inspired by a mix of Undertale and Persona
 
+Following a tutorial by Drew Conley on youtube https://www.youtube.com/watch?v=HmxNrlPx8iY
+
 
 Produced by AUG__DOG!
 
