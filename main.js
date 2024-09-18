@@ -1,4 +1,4 @@
-import 'sfutb.css';
+import 'main.css';
 import { resources } from "resources.js";
 
 const canvas = document/querySelector("game-canvas");
