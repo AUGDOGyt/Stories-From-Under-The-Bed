@@ -48,7 +48,8 @@ export class Sprite {
   const framSizeX = this.frameSize.x;
   const frameSizeY = this.frameSize.y;
   
-  ctx.drawImage(
+  ctx.drawImage
+  (
     this.resource.image,
     framedCoordX,
     frameSizeX,
@@ -56,7 +57,7 @@ export class Sprite {
     x,
     y,
     frameSizeX * this.scale,
-    frameSizeY * this.scale,
-    ;)
+    frameSizeY * this.scale
+    );
   }
 }
