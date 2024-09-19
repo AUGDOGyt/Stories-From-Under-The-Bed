@@ -12,7 +12,7 @@ Produced by AUG__DOG!
 Sprites/Art by AUG__DOG
 
 
-Music by Half of Infinity (pending)
+Music by Half of Infinity
 
 
 Development goals:
