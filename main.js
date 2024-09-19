@@ -1,7 +1,7 @@
 import 'main.css';
-import { Resources } from "source/resources.js";
+import { Resources } from "resources.js";
 
-const canvas = document/querySelector("game-canvas");
+const canvas = document.querySelector("game-canvas");
 const ctx = canvas.getContext("2d");
 
 const skySprite = new Sprite({
@@ -9,7 +9,7 @@ const skySprite = new Sprite({
   frameSize: new Vector2(320, 180)
 });
 
-const groundSprite = new Sprite({
+const groundsprite = new Sprite({
   resource: Resources.images.ground,
   frameSize: new Vector2(320, 180)
 });
@@ -25,9 +25,29 @@ const Hero = new Sprite({
 const Shadow = new Sprite({
   resource: Resources.images.shadow,
   frameSize: new Vector2(32, 32)
-})
+});
 
 const heroPos = new Vector2(16*5, 16*5);
+const input = new Input();
+
+const update = () => {
+  if (input.direction === DOWN) {
+    heroPos.y += 1;
+    hero.frame = 0;
+  }
+  if (input.direction === UP) {
+    heroPos.y -= 1;
+    hero.frame = 6;
+  }
+  if (input.direction === LEFT) {
+    heroPos.x -= 1;
+    hero.frame = 9;
+  }
+  if (input.direction === RIGHT) {
+    heroPos.x += 1;
+    hero.frame = 3;
+  }
+};
 
 const draw = () => {
   skySprite.drawImage(ctx, 0, 0);
@@ -42,7 +62,5 @@ const draw = () => {
 };
 
 
-setInterval(() => {
-  hero.frame += 1;
-  draw();
-}, 300);
+const gameLoop = new gameLoop(update, draw);
+gameLoop.start();
