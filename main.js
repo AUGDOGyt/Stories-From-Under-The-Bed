@@ -2,12 +2,6 @@ import { resources } from "./source/resources.js";
 
 const canvas = document.querySelector("game-canvas");
 
-const draw = () => {
-  const sky = resources.images.sky;
-  if (sky.isLoaded) {
-    ctx.drawImage(sky.image, 0, 0)
-  }
-}
 
 const skySprite = new Sprite({
   resource: Resources.images.sky,
@@ -69,3 +63,4 @@ const draw = () => {
 
 const gameLoop = new gameLoop(update, draw);
 gameLoop.start();
+
