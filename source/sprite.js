@@ -1,3 +1,6 @@
+import { Vector2 } from "Vector2.js";
+import { Resources } from "resources.js";
+
 export class Sprite {
     constructor({
         resource, //image drawn
