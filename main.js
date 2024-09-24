@@ -1,6 +1,12 @@
-import { resources } from "./source/resources.js";
+import { Resources } from "resources.js";
+import { Sprite } from "Sprite.js";
+import { Vector2 } from "Vector2.js";
+import { GameLoop } from "GameLoop.js";
+import { Input } from "Input.js";
 
 const canvas = document.querySelector("game-canvas");
+const ctx = canvas.getContext("2d");
+window.alert(canvas);
 
 
 const skySprite = new Sprite({
